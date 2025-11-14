@@ -19,20 +19,14 @@ Before you run this script, please ensure you have the following:
 2. Run the Script: Open a terminal or command prompt, navigate to the directory where you saved ads-to-vsc.py, and run it:
 
     ```bash
-    python migrate_settings.py
+    python ads-to-vsc.py
     ```
 
 3. Enter File Paths: The script will prompt you for two pieces of information:
 
-4. Source File: Enter the full path to your Azure Data Studio settings.json file.
+  - Source File: Enter the full path to your Azure Data Studio settings.json file.
 
-5. Target File: Enter the full path to your VS Code settings.json file.
-
-```Example (Windows):
-Enter the path to the source (Azure Data Studio) JSON file: C:\Users\YourUser\AppData\Roaming\azuredatastudio\User\settings.json
-Enter the path to the target (VS Code) JSON file: C:\Users\YourUser\AppData\Roaming\Code\User\settings.json
-```
-(Note: Paths will differ on macOS and Linux.)
+  - Target File: Enter the full path to your VS Code MSSQL extension settings.json file.
 
 Done! The script will read the source, transform the connections, and merge them into your target file. It will then print a success message showing how many connections were migrated.
 
